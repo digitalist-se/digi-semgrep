@@ -3,7 +3,7 @@ author: "Digitalist"
 description: "Easily detect and prevent bugs and anti-patterns in your codebase"
 runs:
   using: "docker"
-  image: "docker://digitalist/semgrep:0.1"
+  image: "docker://digitalist/semgrep:0.4"
 inputs:
   config:
     description: |
