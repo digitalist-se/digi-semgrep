@@ -1,0 +1,23 @@
+name: "Semgrep"
+author: "Digitalist"
+description: "Easily detect and prevent bugs and anti-patterns in your codebase"
+runs:
+  using: "docker"
+  image: "docker://digitalist/semgrep"
+inputs:
+  config:
+    description: |
+      Rules and patterns to search for with semgrep.
+  generateSarif:
+    description: |
+      Set to 1 if you want a semgrep.sarif file to be written with all semgrep findings.
+  auditOn:
+    description: |
+      GitHub Actions events where the action should always report success,
+      even if findings were found.
+      `auditOn: push` will scan for findings but not fail on push events.
+      You can set multiple event names with a space-separated string.
+branding:
+  icon: "align-left"
+  color: "gray-dark"
+
