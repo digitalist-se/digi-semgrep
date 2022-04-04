@@ -1,4 +1,4 @@
-name: "Semgrep"
+name: "DigiSemgrep"
 author: "Digitalist"
 description: "Easily detect and prevent bugs and anti-patterns in your codebase"
 runs:
